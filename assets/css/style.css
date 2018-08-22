@@ -5,7 +5,11 @@
     width: 50px;
     height: 50px;
 }
-
+.nav-logo {
+    margin-right: 5px;
+    width: 30px;
+    height: 30px;
+}
 /* Sign in page */
 
 .form-signin {
