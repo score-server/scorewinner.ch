@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>scorewinner</title>
+    <link rel="shortcut icon" type="image/png" href="https://i.imgur.com/18ENHCC.png"/>
     <link rel="stylesheet" type="text/css" href="../assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
