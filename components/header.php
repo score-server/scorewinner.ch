@@ -13,6 +13,3 @@
 </head>
 <body>
 <?php include 'nav.php'; ?>
-<div class="alert alert-info" role="alert">
-    This Website is under construction
-</div>

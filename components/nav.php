@@ -15,7 +15,7 @@
                 <a class="nav-link text-dark" href="/pages/services.php">Services</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-dark" href="/pages/about.php">About</a>
+                <a class="nav-link text-dark" href="/pages/team.php">Team</a>
             </li>
         </ul>
         <ul class="navbar-nav">
