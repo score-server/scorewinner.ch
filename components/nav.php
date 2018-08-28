@@ -17,6 +17,16 @@
             <li class="nav-item">
                 <a class="nav-link text-dark" href="/pages/team.php">Team</a>
             </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link text-dark dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Games
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item nav-item" href="/games/minceraft.php">Minecraft</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item nav-item" href="/games/killingfloor.php">Killing Floor 2</a>
+                </div>
+            </li>
         </ul>
         <ul class="navbar-nav">
             <li><a class="nav-link text-dark" href="/pages/login.php"><i class="fas fa-sign-in-alt"></i> Login</a></li>
