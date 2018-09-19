@@ -11,19 +11,28 @@
             <li class="nav-item">
                 <a class="nav-link text-dark" href="/">Home</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link text-dark" href="/pages/services.php">Services</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link text-dark" href="/pages/team.php">Team</a>
+            <li class="nav-item dropdown">
+                <a class="nav-link text-dark dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Services
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item nav-item" href="http://git.scorewinner.ch"><i class="fas fa-code-branch"></i> Git server</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item nav-item" href="http://movie.scorewinner.ch"><i class="fas fa-video"></i> MovieScore</a>
+                </div>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link text-dark dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Games
+                    <i class="fab fa-steam"></i> Games
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item nav-item" href="/games/minecraft.php">Minecraft</a>
+                    <a class="dropdown-item nav-item" href="/games/profiles.php"><i class="fas fa-gamepad"></i> Our Game Profiles</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item nav-item" href="/games/minecraft.php"><i class="fas fa-gamepad"></i> Minecraft</a>
                 </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-dark" href="/pages/team.php"><i class="fas fa-users"></i> Team</a>
             </li>
         </ul>
         <ul class="navbar-nav">

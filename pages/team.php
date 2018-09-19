@@ -53,9 +53,7 @@
                     </div>
                 </div>
             </div>
-            <br>
-            <h3>Special Thanks to</h3>
-            <p>Scorecube</p>
+
         </div>
     </div>
 
