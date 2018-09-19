@@ -23,8 +23,6 @@
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item nav-item" href="/games/minecraft.php">Minecraft</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item nav-item" href="/games/killingfloor.php">Killing Floor 2</a>
                 </div>
             </li>
         </ul>
