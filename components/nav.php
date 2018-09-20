@@ -28,7 +28,7 @@
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item nav-item" href="/games/profiles.php"><i class="fas fa-gamepad"></i> Our Game Profiles</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item nav-item" href="/games/minecraft.php"><i class="fas fa-gamepad"></i> Minecraft</a>
+                    <a class="dropdown-item nav-item" href="/games/gameservers.php"><i class="fas fa-gamepad"></i> Gameservers</a>
                 </div>
             </li>
             <li class="nav-item">
