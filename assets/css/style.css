@@ -41,3 +41,8 @@
     border-top-left-radius: 0;
     border-top-right-radius: 0;
 }
+.discord {
+    height: 90%;
+    min-height: 500px;
+    width: 100%;
+}

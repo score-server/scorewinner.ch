@@ -9,7 +9,7 @@ function getSteamProfiles(){
 function teamProfiles(players) {
     players.forEach(function (player) {
         $("#steamList").append(
-            '<div class="col-sm-3">' +
+            '<div class="col-md-6 mb-5">' +
                 '<div class="card">' +
                     '<img class="card-img-top" src="' + player.avatarfull + '">' +
                     '<div class="card-body">' +
