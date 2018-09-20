@@ -8,14 +8,13 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <a class="nav-link text-dark" href="/">Home</a>
-            </li>
             <li class="nav-item dropdown">
                 <a class="nav-link text-dark dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Services
+                    <i class="fas fa-cogs"></i> Services
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item nav-item" href="/pages/services.php"><i class="fas fa-exclamation-triangle"></i> Service Status</a>
+                    <div class="dropdown-divider"></div>
                     <a class="dropdown-item nav-item" href="http://git.scorewinner.ch"><i class="fas fa-code-branch"></i> Git server</a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item nav-item" href="http://movie.scorewinner.ch"><i class="fas fa-video"></i> MovieScore</a>
@@ -26,7 +25,7 @@
                     <i class="fab fa-steam"></i> Games
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item nav-item" href="/games/profiles.php"><i class="fas fa-gamepad"></i> Our Game Profiles</a>
+                    <a class="dropdown-item nav-item" href="/games/profiles.php"><i class="fas fa-user"></i> Our Game Profiles</a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item nav-item" href="/games/gameservers.php"><i class="fas fa-gamepad"></i> Gameservers</a>
                 </div>

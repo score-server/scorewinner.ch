@@ -6,9 +6,7 @@ function checkServerStatus($ip, $port) {
     //check if the connection worked and the server is online
     if($coonectionStream >= 1) {
         return true;
-        //echo out information if server is online
     } else {
         return false;
-        //echo out information if server is offline
     }
 }
