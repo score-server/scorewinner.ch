@@ -17,6 +17,8 @@
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item nav-item" href="http://git.scorewinner.ch"><i class="fas fa-code-branch"></i> Git server</a>
                     <div class="dropdown-divider"></div>
+                    <a class="dropdown-item nav-item" href="http://files.scorewinner.ch"><i class="fas fa-folder-open"></i> Scorefile</a>
+                    <div class="dropdown-divider"></div>
                     <a class="dropdown-item nav-item" href="http://movie.scorewinner.ch"><i class="fas fa-video"></i> MovieScore</a>
                 </div>
             </li>
