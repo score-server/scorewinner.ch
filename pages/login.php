@@ -1,3 +1,4 @@
+<?php include ("../assets/config/database-variables.php"); ?>
 <?php include '../components/header.php'; ?>
 <?php require_once '../assets/functions/loggged-in-check.php'; ?>
 <?php include '../assets/functions/login-function.php'; ?>

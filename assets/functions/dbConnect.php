@@ -1,9 +1,9 @@
 <?php
 
-define('DB_SERVER', 'server');
-define('DB_USERNAME', 'username');
-define('DB_PASSWORD', 'password');
-define('DB_NAME', 'database');
+define('DB_SERVER', $db_SERVER);
+define('DB_USERNAME', $db_USERNAME);
+define('DB_PASSWORD', $db_PASSWORD);
+define('DB_NAME', $db_NAME);
 
 /* Attempt to connect to MySQL database */
 $link = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);
