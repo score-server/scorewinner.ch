@@ -6,5 +6,5 @@
     $_SESSION = array();
 
     // Redirect to login page
-    header("location: login.php");
+echo '<script language="javascript">window.location.href ="login.php"</script>';
     exit;

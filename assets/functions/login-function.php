@@ -60,7 +60,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                             $_SESSION["admin"] = $admin;
 
                             // Redirect user to backend page
-                            header("location: ../backend/overview.php");
+                            echo '<script language="javascript">window.location.href ="../backend/overview.php"</script>';
                         } else{
                             // Display an error message if password is not valid
                             $password_err = "The password you entered was not valid.";

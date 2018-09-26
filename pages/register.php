@@ -1,3 +1,4 @@
+<?php include ("../assets/config/database-variables.php"); ?>
 <?php include '../components/header.php'; ?>
 <?php include '../assets/functions/admin-check.php'; ?>
 <?php include '../assets/functions/register-function.php'; ?>

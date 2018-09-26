@@ -86,7 +86,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             // Attempt to execute the prepared statement
             if(mysqli_stmt_execute($stmt)){
                 // Redirect to home page
-                header("location: ../backend/overview.php");
+                echo '<script language="javascript">window.location.href ="../backend/overview.php"</script>';
             } else{
                 echo "Something went wrong. Please try again later.";
             }
