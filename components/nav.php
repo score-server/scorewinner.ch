@@ -39,7 +39,7 @@
         <ul class="navbar-nav">
             <?php
             if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] == true){
-                echo '<li><a class="nav-link text-dark" href="#"><i class="fas fa-user-tie"></i> ' . $_SESSION["username"] . ' </a></li>
+                echo '<li><a class="nav-link text-dark" href="/backend/dashboard.php"><i class="fas fa-user-tie"></i> ' . $_SESSION["username"] . ' </a></li>
                       <li><a class="nav-link text-dark" href="/pages/logout.php"><i class="fas fa-sign-out-alt"></i> Log out</a></li>';
             }
             else {

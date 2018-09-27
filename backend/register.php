@@ -1,12 +1,11 @@
-<?php include ("../assets/config/database-variables.php"); ?>
-<?php include '../components/header.php'; ?>
+<?php include '../assets/config/database-variables.php' ; ?>
+<?php include 'backend-header.php' ?>
 <?php include '../assets/functions/admin-check.php'; ?>
 <?php include '../assets/functions/register-function.php'; ?>
 
 
-<div class="container text-center wrapper">
-    <img class="mb-4" src="../assets/images/logo_black.png" alt="" width="120px" height="120px">
-    <h1 class="h3 mb-3 font-weight-normal">Register new Users</h1>
+<div class="col-md-9 text-center">
+    <h2 class="mb-3">Register new Users</h2>
 
     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" class="form-signin">
         <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
@@ -29,8 +28,10 @@
             <label class="form-check-label" for="admin_checkbox">is Admin</label>
         </div>
         <div class="form-group">
-            <input type="submit" class="btn btn-primary btn-block" value="Submit">
+            <input type="submit" class="btn btn-primary btn-block" value="Create User">
         </div>
     </form>
+</div>
+</div>
 </div>
 <?php include '../components/footer.php'; ?>
