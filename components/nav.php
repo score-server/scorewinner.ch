@@ -38,7 +38,6 @@
         </ul>
         <ul class="navbar-nav">
             <?php
-            session_start();
             if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] == true){
                 echo '<li><a class="nav-link text-dark" href="#"><i class="fas fa-user-tie"></i> ' . $_SESSION["username"] . ' </a></li>
                       <li><a class="nav-link text-dark" href="/pages/logout.php"><i class="fas fa-sign-out-alt"></i> Log out</a></li>';
