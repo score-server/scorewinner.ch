@@ -38,8 +38,10 @@
         </ul>
         <ul class="navbar-nav">
             <?php
-            if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] == true){
-                echo '<li><a class="nav-link text-dark" href="/backend/dashboard.php"><i class="fas fa-user-tie"></i> ' . $_SESSION["username"] . ' </a></li>
+            include(dirname(__DIR__).'/assets/functions/API-functions.php');
+            $user = getCurrentUser();
+            if(isset($user)){
+                echo '<li><a class="nav-link text-dark" href="/backend/dashboard.php"><i class="fas fa-user-tie"></i> ' . $user["name"] . ' </a></li>
                       <li><a class="nav-link text-dark" href="/pages/logout.php"><i class="fas fa-sign-out-alt"></i> Log out</a></li>';
             }
             else {

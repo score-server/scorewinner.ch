@@ -1,9 +1,7 @@
 <?php
-    // Initialize the session
-    session_start();
-
-    // Unset all of the session variables
-    $_SESSION = array();
+    // call logout function
+    include "../assets/functions/API-functions.php";
+    logout();
 
     // Redirect to login page
 echo '<script language="javascript">window.location.href ="login.php"</script>';
