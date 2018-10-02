@@ -4,20 +4,20 @@
 
 function getUser($userId)
 {
-    $json = file_get_contents("http://movie.scorewinner.ch/api/user/{$userId}");
+    $json = file_get_contents("http://scorewinner.ch:8081/api/user/{$userId}");
     $user = json_decode($json);
     return $user;
 }
 
-function getCurrentUser()
+function getCurrentUser($session)
 {
-    $json = file_get_contents("http://movie.scorewinner.ch/api/user/current");
+    $json = file_get_contents("http://scorewinner.ch:8081/api/user/current");
     $user = json_decode($json);
     return $user;
 }
 function getUserList()
 {
-    $json = file_get_contents('http://movie.scorewinner.ch/api/user');
+    $json = file_get_contents('http://scorewinner.ch:8081/api/user');
     $userList = json_decode($json);
     foreach ($userList as $user) {
         displayUser($user);
@@ -62,12 +62,12 @@ function post_request($url, array $params)
 
 function login($name, $password)
 {
-    $response = post_request("http://movie.scorewinner.ch/api/login", array("name" => $name, "password" => $password));
+    $response = post_request("http://scorewinner.ch:8081/api/login", array("name" => $name, "password" => $password));
     return $response;
 }
 
 function logout()
 {
-    $response = post_request("http://movie.scorewinner.ch/api/login/logout", array());
+    $response = post_request("http://scorewinner.ch:8081/api/login/logout", array());
     return $response;
 }

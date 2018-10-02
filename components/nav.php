@@ -39,7 +39,8 @@
         <ul class="navbar-nav">
             <?php
             include(dirname(__DIR__).'/assets/functions/API-functions.php');
-            $user = getCurrentUser();
+            $session= "";
+            $user = getCurrentUser($session);
             if(isset($user)){
                 echo '<li><a class="nav-link text-dark" href="/backend/dashboard.php"><i class="fas fa-user-tie"></i> ' . $user["name"] . ' </a></li>
                       <li><a class="nav-link text-dark" href="/pages/logout.php"><i class="fas fa-sign-out-alt"></i> Log out</a></li>';
