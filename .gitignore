@@ -62,4 +62,4 @@ fabric.properties
 .idea/httpRequests
 .gitignore
 .idea/
-assets/config/database-variables.php
+.DS_Store
