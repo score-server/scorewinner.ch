@@ -15,11 +15,11 @@
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item nav-item" href="/pages/services.php"><i class="fas fa-exclamation-triangle"></i> Service Status</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item nav-item" href="http://git.scorewinner.ch"><i class="fas fa-code-branch"></i> Git server</a>
+                    <a class="dropdown-item nav-item" href="https://git.scorewinner.ch"><i class="fas fa-code-branch"></i> Git server</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item nav-item" href="http://files.scorewinner.ch"><i class="fas fa-folder-open"></i> Scorefile</a>
+                    <a class="dropdown-item nav-item" href="https://files.scorewinner.ch"><i class="fas fa-folder-open"></i> Scorefile</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item nav-item" href="http://movie.scorewinner.ch"><i class="fas fa-video"></i> MovieScore</a>
+                    <a class="dropdown-item nav-item" href="https://movie.scorewinner.ch"><i class="fas fa-video"></i> MovieScore</a>
                 </div>
             </li>
             <li class="nav-item dropdown">
