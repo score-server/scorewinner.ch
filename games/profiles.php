@@ -8,11 +8,13 @@
         <div class="row">
             <div class="col-md-12 col-lg-8">
                 <h1>Steam Accounts</h1>
+                <p class="lead">Steam Profiles of all Members of the Score-Team</p>
                 <div class="row" id="steamList">
                 </div>
             </div>
             <div class="col-md-12 col-lg-4">
                 <h1>Our Discord</h1>
+                <p class="lead">ScoreServer</p>
                 <iframe src="https://discordapp.com/widget?id=355686076003778561&theme=dark" class="discord" allowtransparency="true" frameborder="0"></iframe>
             </div>
         </div>
