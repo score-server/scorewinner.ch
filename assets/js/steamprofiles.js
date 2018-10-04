@@ -1,6 +1,6 @@
 var players;
 function getSteamProfiles(){
-    $.getJSON('http://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=A6BA7D083D9966B0CA20A2741C3E0B65&steamids=' + steamIDs, function(steamProfiles) {
+        $.getJSON('https://api.steampowered.com/ISteamUser/GetPlayerSummaries/v0002/?key=A6BA7D083D9966B0CA20A2741C3E0B65&steamids=' + steamIDs, function(steamProfiles) {
         players = steamProfiles.response.players;
         teamProfiles(players);
     });
