@@ -3,8 +3,7 @@
     $ip = $server[1];
     $port = $server[2];
 ?>
-<hr>
-<div>
+<div class="col-md-6">
     <p class="lead">
         IP Adress:<br>
         <code><?php echo $ip .":". $port ?></code>
@@ -20,5 +19,6 @@
         echo '<p class="alert alert-danger" role="alert">Server is offline</p>';
     }
     ?>
+    <hr>
 </div>
 <?php } ?>
