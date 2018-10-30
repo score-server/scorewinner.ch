@@ -42,7 +42,7 @@
     border-top-right-radius: 0;
 }
 .discord {
-    height: 87%;
     min-height: 500px;
+    max-height: 800px;
     width: 100%;
 }
