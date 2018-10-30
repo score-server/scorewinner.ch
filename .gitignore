@@ -63,3 +63,4 @@ fabric.properties
 .gitignore
 .idea/
 .DS_Store
+/assets/config/database-variables.php
