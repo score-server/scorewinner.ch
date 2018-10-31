@@ -3,7 +3,7 @@ var members = [];
 function getSteamGroup(){
     $.ajax({
         type: "GET",
-        url: "http://steamcommunity.com/groups/ScoreServer/memberslistxml/?xml=1",
+        url: "https://steamcommunity.com/groups/ScoreServer/memberslistxml/?xml=1",
         dataType: "xml",
         success: function(xml){
             $(xml).find('steamID64').each(function(){
