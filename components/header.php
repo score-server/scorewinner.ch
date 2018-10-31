@@ -1,3 +1,4 @@
+<?php header("Access-Control-Allow-Origin: http://steamcommunity.com/groups/ScoreServer/memberslistxml/?xml=1");?>
 <?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="de">
