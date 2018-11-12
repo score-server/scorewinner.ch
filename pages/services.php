@@ -10,7 +10,7 @@
         <div class="col-md-6">
             <p class="lead">
                 Website:<br>
-                <code>scorewinner.ch</code>
+                <code><a href="https://scorewinner.ch" class="code-link">scorewinner.ch</a></code>
             </p>
             <?php
             $ip = "scorewinner.ch";
@@ -27,7 +27,7 @@
         <div class="col-md-6">
             <p class="lead">
                 Website:<br>
-                <code>movie.scorewinner.ch</code>
+                <code><a href="https://movie.scorewinner.ch" class="code-link">movie.scorewinner.ch</a></code>
             </p>
             <?php
             $ip = "scorewinner.ch";
@@ -44,7 +44,7 @@
         <div class="col-md-6">
             <p class="lead">
                 Website:<br>
-                <code>files.scorewinner.ch</code>
+                <code><a href="https://files.scorewinner.ch" class="code-link">files.scorewinner.ch</a></code>
             </p>
             <?php
             $ip = "scorewinner.ch";
@@ -61,7 +61,7 @@
         <div class="col-md-6">
             <p class="lead">
                 Website:<br>
-                <code>git.scorewinner.ch</code>
+                <code><a href="https://git.scorewinner.ch" class="code-link">git.scorewinner.ch</a></code>
             </p>
             <?php
             $ip = "scorewinner.ch";

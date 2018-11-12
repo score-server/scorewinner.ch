@@ -8,12 +8,12 @@ function getSteamGroup(membersJson){
 function teamProfiles(players) {
     players.forEach(function (player) {
         $("#steamList").append(
-            '<div class="col-md-4 col-6 mb-5">' +
+            '<div class="col-md-4 col-6 mb-4">' +
                 '<div class="card">' +
                     '<img class="card-img-top" src="' + player.avatarfull + '">' +
                     '<div class="card-body">' +
                         '<h5 class="card-title">'+ player.personaname +'</h5>' +
-                            '<a href="' + player.profileurl + '">Steam Profiles</a>' +
+                            '<a href="' + player.profileurl + '">Steam Profile</a>' +
                     '</div>' +
                 '</div>' +
             '</div>'
