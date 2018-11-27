@@ -37,19 +37,7 @@
             </li>
         </ul>
         <ul class="navbar-nav">
-            <?php
-            include(dirname(__DIR__).'/assets/functions/API-functions.php');
-            $session= "";
-            $user = getCurrentUser($session);
-            if(isset($user)){
-                echo '<li><a class="nav-link text-dark" href="/backend/dashboard.php"><i class="fas fa-user-tie"></i> ' . $user["name"] . ' </a></li>
-                      <li><a class="nav-link text-dark" href="/pages/logout.php"><i class="fas fa-sign-out-alt"></i> Log out</a></li>';
-            }
-            else {
-                echo '<li><a class="nav-link text-dark" href="/pages/login.php"><i class="fas fa-sign-in-alt"></i> Login</a></li>';
-            }
-            ?>
+            <li><a class="nav-link text-dark" href="/pages/login.php"><i class="fas fa-sign-in-alt"></i> Login</a></li>
         </ul>
     </div>
 </nav>
-
