@@ -50,5 +50,5 @@ function login($name, $password)
 function setCookies($response)
 {
     setcookie('MovieScore_session_id', $response, time()+3600, "/");
-    echo '<script type="text/javascript">location.href = "../../pages/login.php";</script>';
+    echo '<script type="text/javascript">location.href = "../../backend/dashboard.php";</script>';
 }

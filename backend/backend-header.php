@@ -1,5 +1,5 @@
 <?php include '../components/header.php'; ?>
-<?php require_once '../assets/functions/loggged-out-check.php'; ?>
+<?php require_once '../assets/functions/loggged-in-check.php'; ?>
 <div class="container">
     <div class="row text-center col-12">
         <div class="alert alert-primary col-12" role="alert">
