@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="robots" content="noindex">
     <meta name="google-site-verification" content="7wg-x1K0KA5LswNZaG8cTgXiy3E6Vin8WywjWKQKyKk" />
     <title>scorewinner.ch</title>
     <link rel="shortcut icon" type="image/png" href="https://i.imgur.com/kHO4IKs.png"/>
