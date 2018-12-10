@@ -60,7 +60,5 @@ fabric.properties
 
 # Editor-based Rest Client
 .idea/httpRequests
-.gitignore
 .idea/
 .DS_Store
-/assets/config/database-variables.php

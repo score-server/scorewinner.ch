@@ -1,84 +1,54 @@
 <?php
-// Check if the user is already logged in, if yes then redirect him to welcome page
-if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
-    header("location: index.php");
-    exit;
+if (isset($_POST["name"]) && isset( $_POST["password"]))
+{
+//define vars for post request
+    $name = $_POST["name"];
+    $password = $_POST["password"];
+    login($name, $password);
+}
+// Login & Logout functions
+function post_request($url, array $params)
+{
+    $query_content = http_build_query($params);
+    $fp = @fopen($url, 'r', FALSE, // do not use_include_path
+        stream_context_create([
+            'http' => [
+                'header' => [ // header array does not need '\r\n'
+                    'Content-type: application/x-www-form-urlencoded',
+                    'Content-Length: ' . strlen($query_content)
+                ],
+                'method' => 'POST',
+                'content' => $query_content
+            ]
+        ]));
+    if ($fp === FALSE)
+    {
+        error_reporting(E_ERROR | E_PARSE);
+        fclose($fp);
+        return false;
+    }
+    else
+    {
+        $result = stream_get_contents($fp); // no maxlength/offset
+        fclose($fp);
+        return $result;
+    }
 }
 
-// Include config file
-require_once "dbConnect.php";
-
-// Define variables and initialize with empty values
-$username = $password = $admin = "";
-$username_err = $password_err = "";
-
-// Processing form data when form is submitted
-if($_SERVER["REQUEST_METHOD"] == "POST"){
-
-    // Check if username is empty
-    if(empty(trim($_POST["username"]))){
-        $username_err = "Please enter username.";
-    } else{
-        $username = trim($_POST["username"]);
+//api call and call function for cookie storage
+function login($name, $password)
+{
+    $response = post_request("http://scorewinner.ch:8081/api/login", array("name" => $name, "password" => $password));
+    if ($response === false)
+    {
+        echo '<script type="text/javascript">displayError()</script>';
     }
+    setCookies($response);
+}
 
-    // Check if password is empty
-    if(empty(trim($_POST["password"]))){
-        $password_err = "Please enter your password.";
-    } else{
-        $password = trim($_POST["password"]);
-    }
-
-    // Validate credentials
-    if(empty($username_err) && empty($password_err)){
-        // Prepare a select statement
-        $sql = "SELECT id, username, password, admin FROM users WHERE username = ?";
-
-        if($stmt = mysqli_prepare($link, $sql)){
-            // Bind variables to the prepared statement as parameters
-            mysqli_stmt_bind_param($stmt, "s", $param_username);
-
-            // Set parameters
-            $param_username = $username;
-
-            // Attempt to execute the prepared statement
-            if(mysqli_stmt_execute($stmt)){
-                // Store result
-                mysqli_stmt_store_result($stmt);
-
-                // Check if username exists, if yes then verify password
-                if(mysqli_stmt_num_rows($stmt) == 1){
-                    // Bind result variables
-                    mysqli_stmt_bind_result($stmt, $id, $username, $hashed_password, $admin);
-                    if(mysqli_stmt_fetch($stmt)){
-                        if(password_verify($password, $hashed_password)){
-
-                            // Store data in session variables
-                            $_SESSION["loggedin"] = true;
-                            $_SESSION["id"] = $id;
-                            $_SESSION["username"] = $username;
-                            $_SESSION["admin"] = $admin;
-
-                            // Redirect user to backend page
-                            echo '<script language="javascript">window.location.href ="../../backend/dashboard.php"</script>';
-                        } else{
-                            // Display an error message if password is not valid
-                            $password_err = "The password you entered was not valid.";
-                        }
-                    }
-                } else{
-                    // Display an error message if username doesn't exist
-                    $username_err = "No account found with that username.";
-                }
-            } else{
-                echo "Oops! Something went wrong. Please try again later.";
-            }
-        }
-
-        // Close statement
-        mysqli_stmt_close($stmt);
-    }
-
-    // Close connection
-    mysqli_close($link);
+//Store Session ID in cookie
+function setCookies($response)
+{
+    setcookie('MovieScore_session_id', $response, time()+3600, "/");
+    echo '<script type="text/javascript">location.href = "../../backend/dashboard.php";</script>';
 }
