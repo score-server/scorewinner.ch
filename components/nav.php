@@ -19,7 +19,7 @@
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item nav-item" href="https://files.scorewinner.ch"><i class="fas fa-folder-open"></i> Scorefile</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item nav-item" href="https://movie.scorewinner.ch"><i class="fas fa-video"></i> MovieScore</a>
+                    <a class="dropdown-item nav-item" href="http://scorewinner.ch:8081"><i class="fas fa-video"></i> MovieScore</a>
                 </div>
             </li>
             <li class="nav-item dropdown">
