@@ -5,7 +5,7 @@ html {
 
 body {
     background-color: #222629;
-    margin-bottom: 60px;
+
 }
 
 /* for logo */
@@ -92,7 +92,7 @@ span {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 60px;
+
     background-color: #86c232;
 
     padding-top: 20px;
@@ -110,6 +110,7 @@ span {
     width: 30px;
     height: 30px;
 }
+
 /* Sign in page */
 
 .form-signin {
