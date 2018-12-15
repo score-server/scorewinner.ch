@@ -1,15 +1,116 @@
+html {
+    min-height: 100%;
+    position: relative;
+}
 
+body {
+    background-color: #222629;
+
+}
 
 /* for logo */
 .logo {
     width: 50px;
     height: 50px;
 }
+
+.container {
+    color: #ffffff;
+}
+
+.container .card {
+    color: black;
+}
+
+.navbar {
+    color: #ffffff;
+    border-bottom-color: #86c232 !important;
+}
+.navbar > .navbar-brand,
+.navbar > .navbar-toggler,
+.navbar > .navbar-collapse > ul > li > a {
+    color: #ffffff !important;
+}
+
+.navbar > .navbar-collapse > ul > li > .dropdown-menu > a {
+    color: white !important;
+}
+
+.navbar > .navbar-collapse > ul > li > .dropdown-menu > a > i {
+    color: #86c232;
+}
+
+hr {
+    background-color: #86c232 !important;
+}
+
+a {
+    color: #86c232 !important;
+}
+
+i {
+    color: #d8dae0;
+}
+
+span {
+    color: #d8dae0 !important;
+}
+
+.btn-primary {
+    background-color: #86c232;
+    border-color: #86c232;
+}
+
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus {
+    background-color: #61892f;
+    border-color: #61892f;
+
+}
+
+.alert-primary {
+    background-color: #86c232;
+    border-color: #61892f;
+    color: white;
+}
+
+.list-group-flush {
+    color: black;
+}
+
+.dropdown-menu {
+    background-color: #222629;
+    border-color: #86c232;
+}
+
+.dropdown-divider {
+    border-color: #86c232;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    background-color: #86c232;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top-color: #474b4f !important;
+}
+
+.footer > .container > .copyright {
+    margin-bottom: 0;
+    color: white !important;
+}
+
 .nav-logo {
     margin-right: 5px;
     width: 30px;
     height: 30px;
 }
+
 /* Sign in page */
 
 .form-signin {

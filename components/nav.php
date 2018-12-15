@@ -1,10 +1,10 @@
-<nav class="navbar navbar-expand-md navbar-light p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+<nav class="navbar navbar-expand-md p-3 px-md-4 mb-3 border-bottom shadow-sm">
     <a class="navbar-brand" href="/">
-        <img src="https://i.imgur.com/kHO4IKs.png" class="d-inline-block align-top nav-logo" alt="nav brand">
+        <img src="/assets/images/scorewinner_green.png" class="d-inline-block align-top nav-logo" alt="nav brand">
         scorewinner.ch
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <i class="fas fa-bars"></i>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
@@ -14,11 +14,8 @@
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item nav-item" href="/pages/services.php"><i class="fas fa-exclamation-triangle"></i> Service Status</a>
-                    <div class="dropdown-divider"></div>
                     <a class="dropdown-item nav-item" href="https://git.scorewinner.ch"><i class="fas fa-code-branch"></i> Git server</a>
-                    <div class="dropdown-divider"></div>
                     <a class="dropdown-item nav-item" href="https://files.scorewinner.ch"><i class="fas fa-folder-open"></i> Scorefile</a>
-                    <div class="dropdown-divider"></div>
                     <a class="dropdown-item nav-item" href="http://scorewinner.ch:8081"><i class="fas fa-video"></i> MovieScore</a>
                 </div>
             </li>
@@ -28,7 +25,6 @@
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item nav-item" href="/games/profiles.php"><i class="fas fa-user"></i> Our Game Profiles</a>
-                    <div class="dropdown-divider"></div>
                     <a class="dropdown-item nav-item" href="/games/gameservers.php"><i class="fas fa-gamepad"></i> Gameservers</a>
                 </div>
             </li>
