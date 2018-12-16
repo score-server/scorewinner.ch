@@ -1,6 +1,6 @@
 <?php include '../components/header.php'; ?>
 
-<div class="container">
+<div class="container mb-6">
     <h1>The Team</h1>
     <div class="row">
         <div class="col-md-12">
@@ -49,7 +49,7 @@
         </div>
         <div class="col-md-4 col-6 mb-4 team-card">
             <div class="card">
-                <img class="card-img-top" src="https://avatars1.githubusercontent.com/u/32476926">
+                <img class="card-img-top" src="https://avatars3.githubusercontent.com/u/32476926">
                 <div class="card-body">
                     <h2 class="h5 card-title">YKing</h2>
                     <hr>

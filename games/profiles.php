@@ -1,5 +1,5 @@
 <?php include '../components/header.php'; ?>
-    <div class="container">
+    <div class="container mb-6">
         <div class="row">
             <div class="col-md-12">
                 <h1>Gaming & Discord</h1>

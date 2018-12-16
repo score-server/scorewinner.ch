@@ -19,9 +19,10 @@ body {
 }
 
 .container .card {
-    color: black;
+    color: #acb1b4;
+    background-color: #474b4f;
+    border: none;
 }
-
 .navbar {
     color: #ffffff;
     border-bottom-color: #86c232 !important;
@@ -30,6 +31,9 @@ body {
 .navbar > .navbar-toggler,
 .navbar > .navbar-collapse > ul > li > a {
     color: #ffffff !important;
+}
+.navbar > .navbar-collapse > ul > li > .dropdown-menu > a:hover {
+    background-color: #61892f;
 }
 
 .navbar > .navbar-collapse > ul > li > .dropdown-menu > a {
@@ -149,4 +153,7 @@ span {
 }
 .code-link {
     color: #e83e8c;
+}
+.mb-6 {
+    margin-bottom: 4rem !important;
 }
