@@ -7,6 +7,34 @@ body {
     background-color: #222629;
 
 }
+hr {
+    background-color: #86c232 !important;
+}
+
+a {
+    color: #86c232 !important;
+}
+
+i {
+    color: #d8dae0;
+}
+
+span {
+    color: #d8dae0 !important;
+}
+
+/* General styling */
+.discord {
+    min-height: 500px;
+    max-height: 800px;
+    width: 100%;
+}
+.code-link {
+    color: #e83e8c;
+}
+.mb-6 {
+    margin-bottom: 4rem !important;
+}
 
 /* for logo */
 .logo {
@@ -14,15 +42,17 @@ body {
     height: 50px;
 }
 
+/* color & background color for cards & content */
 .container {
     color: #ffffff;
 }
-
 .container .card {
     color: #acb1b4;
     background-color: #474b4f;
     border: none;
 }
+
+/* Navigation styling */
 .navbar {
     color: #ffffff;
     border-bottom-color: #86c232 !important;
@@ -43,23 +73,21 @@ body {
 .navbar > .navbar-collapse > ul > li > .dropdown-menu > a > i {
     color: #86c232;
 }
-
-hr {
-    background-color: #86c232 !important;
+.nav-logo {
+    margin-right: 5px;
+    width: 30px;
+    height: 30px;
+}
+.dropdown-menu {
+    background-color: #222629;
+    border-color: #86c232;
 }
 
-a {
-    color: #86c232 !important;
+.dropdown-divider {
+    border-color: #86c232;
 }
 
-i {
-    color: #d8dae0;
-}
-
-span {
-    color: #d8dae0 !important;
-}
-
+/* Button Styling */
 .btn-primary {
     background-color: #86c232;
     border-color: #86c232;
@@ -83,15 +111,7 @@ span {
     color: black;
 }
 
-.dropdown-menu {
-    background-color: #222629;
-    border-color: #86c232;
-}
-
-.dropdown-divider {
-    border-color: #86c232;
-}
-
+/* Footer Styling */
 .footer {
     position: absolute;
     bottom: 0;
@@ -109,14 +129,7 @@ span {
     color: white !important;
 }
 
-.nav-logo {
-    margin-right: 5px;
-    width: 30px;
-    height: 30px;
-}
-
 /* Sign in page */
-
 .form-signin {
     width: 100%;
     max-width: 330px;
@@ -145,15 +158,4 @@ span {
     margin-bottom: 10px;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
-}
-.discord {
-    min-height: 500px;
-    max-height: 800px;
-    width: 100%;
-}
-.code-link {
-    color: #e83e8c;
-}
-.mb-6 {
-    margin-bottom: 4rem !important;
 }
