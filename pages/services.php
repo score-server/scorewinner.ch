@@ -41,40 +41,5 @@
             ?>
             <hr>
         </div>
-        <div class="col-md-6">
-            <p class="lead">
-                Website:<br>
-                <code><a href="https://files.scorewinner.ch" class="code-link">files.scorewinner.ch</a></code>
-            </p>
-            <?php
-            $ip = "scorewinner.ch";
-            $port = 8080;
-            $status = checkServerStatus($ip, $port);
-            if ($status) {
-                echo '<p class="alert alert-success" role="alert">Service is online</p>';
-            } else {
-                echo '<p class="alert alert-danger" role="alert">Service is offline</p>';
-            }
-            ?>
-            <hr>
-        </div>
-        <div class="col-md-6">
-            <p class="lead">
-                Website:<br>
-                <code><a href="https://git.scorewinner.ch" class="code-link">git.scorewinner.ch</a></code>
-            </p>
-            <?php
-            $ip = "scorewinner.ch";
-            $port = 3000;
-            $status = checkServerStatus($ip, $port);
-            if ($status) {
-                echo '<p class="alert alert-success" role="alert">Service is online</p>';
-            } else {
-                echo '<p class="alert alert-danger" role="alert">Service is offline</p>';
-            }
-            ?>
-            <hr>
-        </div>
-    </div>
 </div>
 <?php include '../components/footer.php'; ?>
